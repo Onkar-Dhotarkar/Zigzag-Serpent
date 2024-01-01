@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+.body{
+    background: url("../bg.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#board{
+    width: 90vmin;
+    height: 92vmin;
+    border-radius: 9px;
+    border: 2px solid black;
+    /* Ensure the z-index places this element above the .body background */
+    z-index: 1;
+    /* Apply the background color for the #board element */
+    background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167)); 
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+
+
+
+}
+
+
+.head{
+    background: linear-gradient(rgb(240, 124, 124), rgb(228, 228, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+#scoreBox{
+    position: absolute;
+    font-weight: bold;
+    font-size: 39px;
+    top: 15px;
+    right: 200px;
+    font-family: 'New Tegomin', serif;
+
+}
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#levelBar {
+    position: absolute;
+    top: 11px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 39px;
+}
+/* ... (existing CSS) ... */
+
+#increaseSpeedBtn {
+    /* New styles for the button */
+    position: absolute;
+    top: 130px; /* Adjust the top position as needed */
+    right: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#increaseSpeedBtn:hover {
+    /* Button hover effect */
+    background-color: #45a049;
+}
+/* ... (existing CSS) ... */
+
+
+#decreaseSpeedBtn {
+    /* New styles for the button */
+    position: absolute;
+    top: 180px; /* Adjust the top position as needed */
+    right: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#decreaseSpeedBtn:hover {
+    /* Button hover effect */
+    background-color: #45a049;
+}
+/* ... (existing CSS) ... */
