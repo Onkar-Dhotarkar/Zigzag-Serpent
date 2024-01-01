@@ -31,3 +31,6 @@ Contributions to enhance gameplay features, improve user experience, or optimize
 # Acknowledgments
 This game was developed as a fun project inspired by the classic Snake game.<br>
 Special thanks to # CODEWITHHARRY.
+
+## Support and Love
+`For support, give a ⭐️.`
